@@ -40,8 +40,8 @@
     "capsule": "bin/capsule.js"
   },
   "scripts": {
-    "start": "bin/capsule.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/capsule.js",
+    "test": "jest --watchAll",
     "lint": "eslint 'bin/*'"
   },
   "repository": {
@@ -74,8 +74,10 @@
   "devDependencies": {
     "eslint": "6.6.0",
     "eslint-config-prettier": "6.5.0",
+    "eslint-plugin-jest": "23.0.3",
     "eslint-plugin-prettier": "3.1.1",
     "husky": "3.0.9",
+    "jest": "24.9.0",
     "lint-staged": "9.4.2",
     "prettier": "1.18.2"
   },
